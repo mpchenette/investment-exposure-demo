@@ -1,0 +1,54 @@
+name: synthetic_exposure_snapshot
+description: Deterministic schema for synthetic position and historical exposure exports.
+synthetic_data_caveat: "All records are synthetic and public-safe."
+columns:
+  - name: as_of_date
+    type: date
+    required: true
+  - name: portfolio_id
+    type: string
+    required: true
+  - name: ticker
+    type: string
+    required: true
+  - name: instrument_name
+    type: string
+    required: true
+  - name: asset_class
+    type: string
+    required: true
+  - name: sector
+    type: string
+    required: true
+  - name: issuer
+    type: string
+    required: true
+  - name: canonical_issuer_id
+    type: string
+    required: true
+  - name: quantity
+    type: number
+    required: true
+  - name: price
+    type: number
+    required: true
+  - name: market_value
+    type: number
+    required: true
+  - name: gross_exposure
+    type: number
+    required: true
+    description: Percent of portfolio gross exposure.
+  - name: issuer_limit
+    type: number
+    required: true
+  - name: currency
+    type: string
+    required: true
+  - name: source_ids
+    type: string
+    required: true
+    description: Pipe-delimited source identifiers that map to Source_Links_Raw.
+  - name: is_synthetic
+    type: boolean
+    required: true

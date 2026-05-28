@@ -1,0 +1,14 @@
+# Generated demo artifacts
+exposure_review_packet_synthetic.xlsx
+historical_exposure_snapshots_2026-Q2.csv
+investment_committee_memo_synthetic.pdf
+
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local/editor noise
+.DS_Store
